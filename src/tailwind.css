@@ -1,0 +1,27 @@
+@tailwind base;
+
+/* Your own custom base styles */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Your own custom component styles */
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+* {
+  font-family: "Barlow", sans-serif;
+}
+.font-heading {
+  font-family: "Bellefair", "Barlow", sans-serif;
+}
+.font-condensed {
+  font-family: "Barlow Condensed", sans-serif;
+}
+.bg-home {
+  @apply lg:bg-[url(./assets/home/background-home-desktop.jpg)] md:bg-[url(./assets/home/background-home-tablet.jpg)] bg-[url(./assets/home/background-home-mobile.jpg)];
+}
