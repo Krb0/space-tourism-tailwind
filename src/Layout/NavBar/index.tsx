@@ -8,7 +8,7 @@ const NavBar = () => {
       <Link to="/">
         <img src={Logo} alt="logo" className="h-[48px] w-[48px] " />
       </Link>
-      <hr className="line" />
+      <hr className="line xl:block" />
       <Nav />
     </header>
   );
