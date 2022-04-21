@@ -7,7 +7,13 @@ const PlanetImage = ({ destination }: { destination: DestinationSchema }) => {
   useEffect(() => {
     setImage(getDestinationImage(destination.name));
   }, [destination]);
-  return <img src={Image} alt="planet" className="mt-10" />;
+  return (
+    <img
+      src={Image}
+      alt="planet"
+      className="mt-10 max-h-[284px] max-w-[284px] xl:max-h-full xl:max-w-full "
+    />
+  );
 };
 
 export default PlanetImage;
