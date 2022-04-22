@@ -7,12 +7,12 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <div
       className={`bg-cover min-w-screen min-h-screen bg-right bg-blur bg-${normalizePath(
         pathname
-      )} pb-12 `}
+      )} `}
     >
       <div className="fixed w-screen h-screen  bg-[rgba(0,0,0,0.2)] z-[0] "></div>
-      <div className="relative z-[4] ">
+      <div className="relative z-[4] min-h-screen flex flex-col">
         <NavBar />
-        <main>{children}</main>
+        <main className="flex flex-col flex-1">{children}</main>
       </div>
     </div>
   );
